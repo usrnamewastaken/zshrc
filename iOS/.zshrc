@@ -27,16 +27,3 @@ unsetopt PROMPT_SP_
 #auto run programs 
 neofetch
 
-#theos alias 
-alias theos='sudo $THEOS/bin/nic.pl'
-alias mpi='sudo make package install'
-alias mp='sudo make package'
-
-#Repo stuff
-alias repo='cd /var/mobile/usrnamewastaken.github.io/repo'
-alias add='git add .'
-alias push='git push'
-alias clone='git clone'
-alias commit='git commit -m “commit”'
-alias package='rm /var/mobile/usrnamewastaken.github.io/repo/Packages.gz && rm /var/mobile/usrnamewastaken.github.io/repo/Packages.bz2 && gzip -k /var/mobile/usrnamewastaken.github.io/repo/Packages && bzip2 -k /var/mobile/usrnamewastaken.github.io/repo/Packages'
-alias depiction='cd /var/mobile/Sileo-Native-Depiction-Generator && python3 ./generator.py'
