@@ -25,8 +25,11 @@ alias ls='ls --color=auto'
 unsetopt PROMPT_SP_
 
 #auto run programs 
-neofetch --ascii ~/.config/neofetch/ascii.txt   
-
+(cat ~/.cache/wal/sequences &)
+pfetch
+autoload -Uz tetriscurses
 #sources 
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#alias
+alias fire='DISPLAY= cacafire'
