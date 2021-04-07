@@ -26,7 +26,7 @@ alias ls='ls --color=auto'
 unsetopt PROMPT_SP_
 
 #auto run programs 
-figlet  $(dpkg --list | wc --lines) | lolcat
+pfetch | lolcat
 autoload -Uz tetriscurses
 #sources 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
