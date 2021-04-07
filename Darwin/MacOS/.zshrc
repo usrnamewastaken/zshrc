@@ -16,7 +16,8 @@ setopt appendhistory
 
 #name color
 autoload -U colors && colors
-PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[white]%}]%
+ %T % %{$reset_color%}$%b "
 
 #ls filetype highlighting 
 alias ls='ls --color=auto'
@@ -25,7 +26,7 @@ alias ls='ls --color=auto'
 unsetopt PROMPT_SP_
 
 #auto run programs 
-pfetch
+figlet  $(dpkg --list | wc --lines) | lolcat
 autoload -Uz tetriscurses
 #sources 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -33,3 +34,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #aliases
 SDKROOT=/var/mobile/iPhoneOS14.4.sdk
 alias nic='/var/mobile/theos/bin/nic.pl'
+
