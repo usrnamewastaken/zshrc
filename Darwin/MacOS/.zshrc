@@ -10,7 +10,7 @@ _comp_options+=(globdots)               # Include hidden files.
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zshhistory
+HISTFILE=~/.zsh_history
 setopt appendhistory
 
 
@@ -26,12 +26,8 @@ alias ls='ls --color=auto'
 unsetopt PROMPT_SP_
 
 #auto run programs 
-pfetch | lolcat
 autoload -Uz tetriscurses
 #sources 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#aliases
-SDKROOT=/var/mobile/iPhoneOS14.4.sdk
-alias nic='/var/mobile/theos/bin/nic.pl'
+
 

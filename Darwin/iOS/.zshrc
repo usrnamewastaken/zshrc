@@ -8,10 +8,10 @@ _comp_options+=(globdots)               # Include hidden files.
 
 
 # History in cache directory:
+HISTFILE=/var/mobile/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zshhistory
-setopt appendhistory
+setopt SHARE_HISTORY
 
 
 #name color
@@ -26,7 +26,8 @@ alias ls='ls --color=auto'
 unsetopt PROMPT_SP_
 
 #auto run programs 
-figlet  $(dpkg --list | wc --lines) | lolcat
+dpkg --list | wc --lines
+uptime -p
 autoload -Uz tetriscurses
 #sources 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
