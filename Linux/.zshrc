@@ -1,4 +1,3 @@
-
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -16,20 +15,21 @@ setopt appendhistory
 
 #name color
 autoload -U colors && colors
-PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg>
 
-#ls filetype highlighting 
+#ls filetype highlighting
 alias ls='ls --color=auto'
 
-#fix “#” in every line
+#fix  ^`^|# ^`^} in every line
 unsetopt PROMPT_SP_
 
-#auto run programs 
+#auto run programs
 (cat ~/.cache/wal/sequences &)
-pfetch
+clear && paleofetch
 autoload -Uz tetriscurses
-#sources 
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#sources
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #alias
-alias fire='DISPLAY= cacafire'
+
+
