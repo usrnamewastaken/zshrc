@@ -15,7 +15,8 @@ setopt appendhistory
 
 #name color
 autoload -U colors && colors
-PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg>
+PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
+
 
 #ls filetype highlighting
 alias ls='ls --color=auto'
@@ -33,3 +34,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #alias
 
 
+export AZULE=~/Azule
