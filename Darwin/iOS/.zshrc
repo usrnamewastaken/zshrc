@@ -26,13 +26,7 @@ alias ls='ls --color=auto'
 unsetopt PROMPT_SP_
 
 #auto run programs 
-dpkg --list | wc --lines
-uptime -p
 autoload -Uz tetriscurses
 #sources 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-#aliases
-SDKROOT=/var/mobile/iPhoneOS14.4.sdk
-alias nic='/var/mobile/theos/bin/nic.pl'
 
