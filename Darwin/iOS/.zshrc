@@ -17,7 +17,7 @@ setopt SHARE_HISTORY
 #name color
 autoload -U colors && colors
 PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[white]%}]%
- %T % %{$reset_color%}$%b "
+ %{$reset_color%}$%b "
 
 #ls filetype highlighting 
 alias ls='ls --color=auto'
